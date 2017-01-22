@@ -1,6 +1,10 @@
-# BSD-Sockets-2
+# BSD-Sockets
 
-This server uses the system unix call ```select(2)``` in order to concurrently accept connections from clients.
+This lab demonstrates the usage of Berkely sockets
+
+https://en.wikipedia.org/wiki/Berkeley_sockets
+
+an API for communcation between IP-networked unix computers. It also demonstrates how concurrently handled connections improves response time of the server.
 
 # How to build the server and client
 

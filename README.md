@@ -46,8 +46,10 @@ Roundtrip timing results for 100 connections for 100 round trips
   - min time: 9.979731 ms
   - max time: 3038.689249 ms
   - average time: 388.355631 ms
-    ```
+```
+
 Now we setup the concurrent server
+
 ```shell
 -bash-4.1$./sconcurrent.out
 Attempting to bind to port 5703
@@ -85,6 +87,6 @@ while( processFurther )
 		
 		}
 ```
-
-The iterative server had a 388 ms rtt and the concurrent server had a 220 rtt. I'm not sure why this is but my guess is that the server is still only working with one thread.
+# Round Trip Times: Concurrent vs Iterative
+The iterative server had a 388 ms rtt and the concurrent server had a 220 rtt. This is not a significant improvement. I'm not sure why this is but my guess is that the server is still only working with one thread.
   

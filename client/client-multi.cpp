@@ -433,7 +433,7 @@ static bool client_process_send( size_t cid, ConnectionData& cd )
 	int ret = send( cd.sock, 
 		cd.buffer+cd.bufferOffset, 
 		cd.bufferSize-cd.bufferOffset,
-		SO_NOSIGPIPE
+		MSG_NOSIGNAL
 	);
 
 	if( ret == -1 )
@@ -656,7 +656,7 @@ static int connect_to_server_nonblock( const sockaddr_in& sa )
 static timespec initTime;
 static void initialize_timer()
 {
-	clock_gettime( CLOCK_REALTIME, &initTime );
+	 clock_gettime( CLOCK_REALTIME, &initTime );
 }
 
 static double get_time_stamp()

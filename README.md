@@ -4,7 +4,7 @@ This lab demonstrates the usage of Berkely sockets
 
 https://en.wikipedia.org/wiki/Berkeley_sockets
 
-an API for communcation between IP-networked unix computers. It also demonstrates how concurrently handled connections improves response time of the server.
+an API for communication between IP-networked unix computers. It also demonstrates how concurrently handled connections improves response time of the server.
 
 # How to build the server and client
 

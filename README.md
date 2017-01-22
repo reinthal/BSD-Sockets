@@ -18,7 +18,7 @@ Simply use
 -bash-4.1$ g++ client-multi.cpp -o mclient.out
 ```
 # Running the comparison
-If you compare the output of the concurrent server with the non-concurrent one from BSD-sockets-1 you see a significant improvement!
+If you compare the output of the concurrent server with the iterative you see a significant improvement!
 
 First, setup the iterative server
 
